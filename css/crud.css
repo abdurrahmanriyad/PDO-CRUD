@@ -1,0 +1,45 @@
+.grid {
+    /*width: 104% !important*/
+}
+
+.grid:after {
+    clear: both;
+    content: '';
+    display: block
+}
+
+.grid-item,
+.grid-sizer {
+    width: 33.33%;
+}
+
+.grid-item {
+    padding: 1%;
+    float: left;
+}
+
+.grid-item img {
+    width: 100%
+}
+.card{
+    margin: 0;
+}
+.card .card-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .grid-item,.grid-sizer {
+        width:50%
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .grid-item,.grid-sizer {
+        width:100%
+    }
+}
